@@ -28,7 +28,7 @@ You may assume that each input would have **exactly one solution**, and you may 
 
 ### ✅ CODE ONLY – Two Sum (C++)
 
-```cpp
+```
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -48,7 +48,7 @@ public:
     }
 };
 
-```cpp 
+```
 
 - Time & Space Complexity:
 -Time: O(n)
@@ -97,7 +97,7 @@ You are given two sorted arrays `nums1` and `nums2` of size `m` and `n` respecti
 
 ### ✅ CODE ONLY – Merge Sorted Array (C++)
 
-```cpp
+``` 
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
