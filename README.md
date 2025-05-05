@@ -132,3 +132,64 @@ public:
 - Space: O(1) (in-place)
 
 - No additional space used other than the input arrays.
+
+
+
+
+
+
+
+
+
+```
+# 🧠 DSA LeetCode Practice – Beginner Friendly
+
+This repo contains beginner-friendly problems with clean explanations and optimized code in C++. Each section is divided into:
+
+- 🔹 Problem Link  
+- 🔹 Beginner-Friendly Explanation  
+- 🔹 Code Only (copyable)  
+- 🔹 Time & Space Complexity  
+
+---
+
+## ✅ 1. [Two Sum](https://leetcode.com/problems/two-sum/)
+
+### 🧾 Problem:
+
+Given an array of integers `nums` and an integer `target`, return **indices of the two numbers** such that they add up to the target.
+
+You may assume that each input would have **exactly one solution**, and you may not use the same element twice.
+
+---
+
+### 🧠 Beginner-Friendly Approach:
+
+- Use a **hash map** to store the value and its index.
+- For each number, check if `(target - current number)` exists in the map.
+- If found, return both indices.
+
+---
+
+### ✅ CODE ONLY – Two Sum (C++)
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> mp;  // value → index
+
+        for (int i = 0; i < nums.size(); i++) {
+            int complement = target - nums[i];
+
+            if (mp.find(complement) != mp.end()) {
+                return {mp[complement], i};
+            }
+
+            mp[nums[i]] = i;
+        }
+
+        return {}; // No solution case (not expected here)
+    }
+};
+```
