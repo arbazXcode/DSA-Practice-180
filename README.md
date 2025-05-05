@@ -48,6 +48,8 @@ public:
     }
 };
 
+```cpp 
+
 - Time & Space Complexity:
 -Time: O(n)
 
@@ -92,6 +94,7 @@ You are given two sorted arrays `nums1` and `nums2` of size `m` and `n` respecti
 
 ---
 
+
 ### ✅ CODE ONLY – Merge Sorted Array (C++)
 
 ```cpp
@@ -117,7 +120,8 @@ public:
         }
     }
 };
-```
+
+```cpp
 
 - Time & Space Complexity:
 - Time: O(m + n)
